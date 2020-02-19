@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema id="DataSetprinttotalamount" targetNamespace="http://tempuri.org/DataSetprinttotalamount.xsd" xmlns:mstns="http://tempuri.org/DataSetprinttotalamount.xsd" xmlns="http://tempuri.org/DataSetprinttotalamount.xsd" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop" attributeFormDefault="qualified" elementFormDefault="qualified">
+  <xs:annotation>
+    <xs:appinfo source="urn:schemas-microsoft-com:xml-msdatasource">
+      <DataSource DefaultConnectionIndex="0" FunctionsComponentName="QueriesTableAdapter" Modifier="AutoLayout, AnsiClass, Class, Public" SchemaSerializationMode="IncludeSchema" xmlns="urn:schemas-microsoft-com:xml-msdatasource">
+        <Connections />
+        <Tables />
+        <Sources />
+      </DataSource>
+    </xs:appinfo>
+  </xs:annotation>
+  <xs:element name="DataSetprinttotalamount" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:EnableTableAdapterManager="true" msprop:Generator_DataSetName="DataSetprinttotalamount" msprop:Generator_UserDSName="DataSetprinttotalamount">
+    <xs:complexType>
+      <xs:choice minOccurs="0" maxOccurs="unbounded">
+        <xs:element name="DataTableprinttotal" msprop:Generator_TableClassName="DataTableprinttotalDataTable" msprop:Generator_TableVarName="tableDataTableprinttotal" msprop:Generator_TablePropName="DataTableprinttotal" msprop:Generator_RowDeletingName="DataTableprinttotalRowDeleting" msprop:Generator_RowChangingName="DataTableprinttotalRowChanging" msprop:Generator_RowEvHandlerName="DataTableprinttotalRowChangeEventHandler" msprop:Generator_RowDeletedName="DataTableprinttotalRowDeleted" msprop:Generator_UserTableName="DataTableprinttotal" msprop:Generator_RowChangedName="DataTableprinttotalRowChanged" msprop:Generator_RowEvArgName="DataTableprinttotalRowChangeEvent" msprop:Generator_RowClassName="DataTableprinttotalRow">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="name" msprop:Generator_ColumnVarNameInTable="columnname" msprop:Generator_ColumnPropNameInRow="name" msprop:Generator_ColumnPropNameInTable="nameColumn" msprop:Generator_UserColumnName="name" type="xs:string" minOccurs="0" />
+              <xs:element name="balancetobepaid" msprop:Generator_ColumnVarNameInTable="columnbalancetobepaid" msprop:Generator_ColumnPropNameInRow="balancetobepaid" msprop:Generator_ColumnPropNameInTable="balancetobepaidColumn" msprop:Generator_UserColumnName="balancetobepaid" type="xs:string" minOccurs="0" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:choice>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

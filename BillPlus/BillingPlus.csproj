@@ -1,0 +1,394 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{AEF43234-BD7B-407A-876D-F32A1D82215C}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BillPlus</RootNamespace>
+    <AssemblyName>BillPlus</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>iconP.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="CrystalDecisions.CrystalReports.Design, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Design.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.Engine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.Engine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.CrystalReports.TemplateEngine, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.CrystalReports.TemplateEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.ReportSource, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.ReportSource.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Shared, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Shared.dll</HintPath>
+    </Reference>
+    <Reference Include="CrystalDecisions.Windows.Forms, Version=13.0.3500.0, Culture=neutral, PublicKeyToken=692fbea5521e1304, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>C:\Program Files (x86)\SAP BusinessObjects\Crystal Reports for .NET Framework 4.0\Common\SAP BusinessObjects Enterprise XI 4.0\win32_x86\dotnet\CrystalDecisions.Windows.Forms.dll</HintPath>
+    </Reference>
+    <Reference Include="FlashControlV71, Version=1.0.3187.32366, Culture=neutral, PublicKeyToken=692fbea5521e1304" />
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=12.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="MySql.Data, Version=6.9.10.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="SmsClient">
+      <HintPath>C:\Users\Aflah\Desktop\SmsClient.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="containerclass.cs" />
+    <Compile Include="CrystalReportCollectamount.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportCollectamount.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReportSalesBill.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReportSalesBill.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CrystalReporttotatltobepaid.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>CrystalReporttotatltobepaid.rpt</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetCollectAmount.cs">
+      <DependentUpon>DataSetCollectAmount.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetCollectAmount.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetCollectAmount.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetprinttotalamount.cs">
+      <DependentUpon>DataSetprinttotalamount.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetprinttotalamount.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetprinttotalamount.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="DataSetSalesinvoice.cs">
+      <DependentUpon>DataSetSalesinvoice.xsd</DependentUpon>
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="DataSetSalesinvoice.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>DataSetSalesinvoice.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="dbop.cs" />
+    <Compile Include="FormSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormSMS.Designer.cs">
+      <DependentUpon>FormSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Formupdatesale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Formupdatesale.Designer.cs">
+      <DependentUpon>Formupdatesale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPrint.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPrint.Designer.cs">
+      <DependentUpon>FormPrint.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddCategory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddCategory.Designer.cs">
+      <DependentUpon>FrmAddCategory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddMasters.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddMasters.Designer.cs">
+      <DependentUpon>FrmAddMasters.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmAddProduct.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmAddProduct.Designer.cs">
+      <DependentUpon>FrmAddProduct.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmCmpnySettings.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmCmpnySettings.Designer.cs">
+      <DependentUpon>FrmCmpnySettings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmForgettPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmForgettPassword.Designer.cs">
+      <DependentUpon>frmForgettPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmLogin.Designer.cs">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmIncomeandexpenses.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmIncomeandexpenses.Designer.cs">
+      <DependentUpon>FrmIncomeandexpenses.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Frmpurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Frmpurchase.Designer.cs">
+      <DependentUpon>Frmpurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmPurchaseUpdate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmPurchaseUpdate.Designer.cs">
+      <DependentUpon>FrmPurchaseUpdate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResetPassword.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResetPassword.Designer.cs">
+      <DependentUpon>frmResetPassword.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSMS.Designer.cs">
+      <DependentUpon>FrmSMS.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSalesVoucher.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSalesVoucher.Designer.cs">
+      <DependentUpon>FrmSalesVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSMSAccounts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSMSAccounts.Designer.cs">
+      <DependentUpon>FrmSMSAccounts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSplashScreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSplashScreen.Designer.cs">
+      <DependentUpon>FrmSplashScreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FrmSupplier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FrmSupplier.Designer.cs">
+      <DependentUpon>FrmSupplier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HomePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="HomePage.Designer.cs">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="provider.cs" />
+    <EmbeddedResource Include="CrystalReportCollectamount.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportCollectamount.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReportSalesBill.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReportSalesBill.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CrystalReporttotatltobepaid.rpt">
+      <Generator>CrystalDecisions.VSDesigner.CodeGen.ReportCodeGenerator</Generator>
+      <LastGenOutput>CrystalReporttotatltobepaid.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSMS.resx">
+      <DependentUpon>FormSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Formupdatesale.resx">
+      <DependentUpon>Formupdatesale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPrint.resx">
+      <DependentUpon>FormPrint.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddCategory.resx">
+      <DependentUpon>FrmAddCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddMasters.resx">
+      <DependentUpon>FrmAddMasters.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmAddProduct.resx">
+      <DependentUpon>FrmAddProduct.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmCmpnySettings.resx">
+      <DependentUpon>FrmCmpnySettings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmForgettPassword.resx">
+      <DependentUpon>frmForgettPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmLogin.resx">
+      <DependentUpon>FrmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmIncomeandexpenses.resx">
+      <DependentUpon>FrmIncomeandexpenses.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Frmpurchase.resx">
+      <DependentUpon>Frmpurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmPurchaseUpdate.resx">
+      <DependentUpon>FrmPurchaseUpdate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResetPassword.resx">
+      <DependentUpon>frmResetPassword.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSMS.resx">
+      <DependentUpon>FrmSMS.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSalesVoucher.resx">
+      <DependentUpon>FrmSalesVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSMSAccounts.resx">
+      <DependentUpon>FrmSMSAccounts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSplashScreen.resx">
+      <DependentUpon>FrmSplashScreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FrmSupplier.resx">
+      <DependentUpon>FrmSupplier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="HomePage.resx">
+      <DependentUpon>HomePage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="app.config" />
+    <None Include="DataSetCollectAmount.xsc">
+      <DependentUpon>DataSetCollectAmount.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetCollectAmount.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetCollectAmount.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetCollectAmount.xss">
+      <DependentUpon>DataSetCollectAmount.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetprinttotalamount.xsc">
+      <DependentUpon>DataSetprinttotalamount.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetprinttotalamount.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetprinttotalamount.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetprinttotalamount.xss">
+      <DependentUpon>DataSetprinttotalamount.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSalesinvoice.xsc">
+      <DependentUpon>DataSetSalesinvoice.xsd</DependentUpon>
+    </None>
+    <None Include="DataSetSalesinvoice.xsd">
+      <SubType>Designer</SubType>
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>DataSetSalesinvoice.Designer.cs</LastGenOutput>
+    </None>
+    <None Include="DataSetSalesinvoice.xss">
+      <DependentUpon>DataSetSalesinvoice.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="color.ico" />
+    <Content Include="DocumentIcon.ico" />
+    <Content Include="icon.ico" />
+    <Content Include="iconP.ico" />
+    <Content Include="icon_sundries_fw__gbS_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{C0C07587-41A7-46C8-8FBD-3F9C8EBE2DDC}" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
