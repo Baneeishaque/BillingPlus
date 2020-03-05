@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BillingPlus", "BillPlus\BillingPlus.csproj", "{AEF43234-BD7B-407A-876D-F32A1D82215C}"
 EndProject
-Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "billingultimate", "billingultimate\billingultimate.vdproj", "{4A91E9E7-D030-4056-85F8-61912F702189}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x86 = Debug|x86
@@ -15,8 +13,6 @@ Global
 		{AEF43234-BD7B-407A-876D-F32A1D82215C}.Debug|x86.Build.0 = Debug|x86
 		{AEF43234-BD7B-407A-876D-F32A1D82215C}.Release|x86.ActiveCfg = Release|x86
 		{AEF43234-BD7B-407A-876D-F32A1D82215C}.Release|x86.Build.0 = Release|x86
-		{4A91E9E7-D030-4056-85F8-61912F702189}.Debug|x86.ActiveCfg = Debug
-		{4A91E9E7-D030-4056-85F8-61912F702189}.Release|x86.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
