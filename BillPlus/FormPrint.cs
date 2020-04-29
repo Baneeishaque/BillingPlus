@@ -11,15 +11,15 @@ namespace BillPlus
 {
     public partial class FormPrint : Form
     {
-        private CrystalReportCollectamount objRpt;
+        //private CrystalReportCollectamount objRpt;
 
         public FormPrint()
         {
             InitializeComponent();
         }
      
-        DataSetSalesinvoice objRptsalesinv;
-        private CrystalReporttotatltobepaid objRpt_2;
+        //DataSetSalesinvoice objRptsalesinv;
+        //private CrystalReporttotatltobepaid objRpt_2;
         public FormPrint(CrystalReportCollectamount objRpt)
         {
 

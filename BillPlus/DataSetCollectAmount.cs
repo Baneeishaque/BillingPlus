@@ -1,7 +1,9 @@
-﻿namespace BillPlus {
-    
-    
-    public partial class DataSetCollectAmount {
+﻿namespace BillPlus
+{
+
+
+    public partial class DataSetCollectAmount
+    {
         partial class DataTableCollectionDataTable
         {
         }

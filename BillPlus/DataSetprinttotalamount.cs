@@ -1,7 +1,9 @@
-﻿namespace BillPlus {
-    
-    
-    public partial class DataSetprinttotalamount {
+﻿namespace BillPlus
+{
+
+
+    public partial class DataSetprinttotalamount
+    {
         partial class DataTableprinttotalDataTable
         {
         }
